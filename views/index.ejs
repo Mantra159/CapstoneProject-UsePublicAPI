@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Public API</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <head>
+    <header>
       <h1 class="title">NASA Picture of the Day</h1>
-    </head>
+    </header>
     <main>
       <div class="listinput">
         <form action="/" method="POST">
           <input
             class="tinput"
-            type="text"
+            type="date"
             name="inputdate"
             placeholder="Enter date"
+            value="2023-11-19"
           />
           <input class="binput" type="submit" value="Enter" />
         </form>
       </div>
-
-      <img
-        src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/14/2021/08/EY69TW-920x518.jpg"
-        alt=""
-      />
+      <div class="border">
+        <img
+          src="https://images.pexels.com/photos/821944/pexels-photo-821944.jpeg?cs=srgb&dl=pexels-george-desipris-821944.jpg&fm=jpg"
+          alt=""
+        />
+      </div>
 
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dicta
@@ -34,6 +39,5 @@
         nesciunt.
       </p>
     </main>
-    <footer>Copyright @ 2023</footer>
   </body>
 </html>
