@@ -48,7 +48,7 @@ app.get("/", async (req, res) => {
     } catch (error) {
         res.status(500);
     };
-    res.render("index.ejs", { todaysDate: todaysDate(), image: image, description: description, title: title });
+    res.render("index.ejs", { date: todaysDate(), image: image, description: description, title: title });
 
 });
 
