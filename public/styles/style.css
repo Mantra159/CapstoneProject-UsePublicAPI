@@ -67,7 +67,7 @@ input {
 .tinput {
     font-family: "oswald";
     letter-spacing: 0.05rem;
-    width: 80%;
+    width: 70%;
     height: 40px;
     color: var(--silver);
     margin: none;
@@ -87,7 +87,7 @@ input {
 .binput {
     font-family: "oswald";
     letter-spacing: 0.05rem;
-    width: 16.5%;
+    width: 20%;
     height: 40px;
     margin: none;
     padding: none;

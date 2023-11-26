@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Public API</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
-  <body>
-    <header>
-      <h1 class="title">NASA Picture of the Day</h1>
-    </header>
-    <main>
-      <div class="listinput">
-        <form action="/" method="POST">
-          <input
-            class="tinput"
-            type="date"
-            name="inputdate"
-            placeholder="Enter date"
-            value="2023-11-19"
-          />
-          <input class="binput" type="submit" value="Enter" />
-        </form>
-      </div>
-      <div class="border">
-        <img
-          src="https://images.pexels.com/photos/821944/pexels-photo-821944.jpeg?cs=srgb&dl=pexels-george-desipris-821944.jpg&fm=jpg"
-          alt=""
-        />
-      </div>
 
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dicta
-        qui dolores veniam libero doloremque facilis, corrupti sint vel
-        praesentium laborum, omnis ex, distinctio totam esse nulla eos error
-        nesciunt.
-      </p>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public API</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+  <header>
+    <h1 class="title"><%= title %></h1>
+  </header>
+  <main>
+    <div class="listinput">
+      <form action="/" method="POST">
+        <input class="tinput" type="date" name="inputdate" placeholder="Enter date" value=<%= date%> />
+        <input class="binput" type="submit" value="Enter" />
+      </form>
+    </div>
+    <div class="border">
+      <img src=<%= image %> alt="" />
+    </div>
+
+    <p>
+      <%= description %>
+    </p>
+  </main>
+</body>
+
 </html>
